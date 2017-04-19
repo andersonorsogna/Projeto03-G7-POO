@@ -1,3 +1,17 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<h2>Hello World!</h2>
+<center>
+    <table width="100%">
+    <tr>
+        <td>
+        <img src="Imagens/skyline_barcelona2.jpg" alt=""/>
+        </td>
+        <td>
+        Endereço: Praça 19 de Janeiro <br/>
+        Praia Grande / SP <br/>
+        Tel(13) 3496-2000 / (13) 99741-8584 <br/>
+        sac@projeto03g7.com.br
+        </td>
+    </tr>
+</table>
+</center>

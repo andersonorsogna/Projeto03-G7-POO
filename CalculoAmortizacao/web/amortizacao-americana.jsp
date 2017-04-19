@@ -28,11 +28,11 @@
              </tr>
              <tr>
                  <td>Valor (em R$): </td>
-                 <td><input type="number" name="v" value="<%=v%>"/></td>
+                 <td><input type="number" name="v" value="<%=v%>" step="0.01"/></td>
              </tr>
              <tr>
                  <td>Juros (%a.m.): </td>
-                 <td><input type="number" name="i" value="<%=i%>"/><td>
+                 <td><input type="number" name="i" value="<%=i%>" step="0.01"/><td>
              </tr>
              <tr>
                  <td colspan="2"><input type="submit" value="Calcular"/></td>

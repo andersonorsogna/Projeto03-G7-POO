@@ -1,8 +1,3 @@
-<%-- 
-    Document   : tabela-price
-    Created on : 19/04/2017, 01:24:48
-    Author     : Aline
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -12,6 +7,7 @@
         <title> ..::Tabela - Price::.. </title>
     </head>
     <body>
+    <%@include file="WEB-INF/menu.jspf"%>
         <%
             double cap = 0;
             double taxa = 0;
@@ -82,5 +78,6 @@
                 </tr>
                 <%}%>
             </table><%}%>
+    <%@include file="WEB-INF/footer.jspf"%>
     </body>
 </html>
