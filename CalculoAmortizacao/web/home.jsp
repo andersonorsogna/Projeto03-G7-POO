@@ -1,8 +1,3 @@
-<%-- 
-    Document   : home
-    Created on : 19/04/2017, 01:21:22
-    Author     : Aline
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
