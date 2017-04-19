@@ -7,28 +7,28 @@
         <title> ..::Tabela - Price::.. </title>
     </head>
     <body>
-    <%@include file="WEB-INF/header.jspf"%>
+    <%@include file="WEB-INF/header.jspf"%>   <!-- Include para fragmentos de página-->
     <%@include file="WEB-INF/menu.jspf"%>
     <h1>Tabela Price</h1>
          <hr>
         <%
             double cap = 0;
             double taxa = 0;
-            double dev = 0;
+            double dev = 0;                 //Declaração de variáveis
             double amorti = 0;
             double prest = 0;
             int meses = 0;
             
-            try{cap = Double.parseDouble(request.getParameter("capi"));}
+            try{cap = Double.parseDouble(request.getParameter("capi"));}    //try para pegar valores dos inputs
             catch(Exception e){}
-            try{taxa = Double.parseDouble(request.getParameter("tax"));}
+            try{taxa = Double.parseDouble(request.getParameter("tax"));}  //catch caso não consiga usar o try 
             catch(Exception e){}
             try{meses = Integer.parseInt(request.getParameter("mes"));}
             catch(Exception e){}
 
             taxa = taxa/100;
             double l1 = cap * taxa;
-            double a = Math.pow((1+taxa),meses);
+            double a = Math.pow((1+taxa),meses);   //Cálculo
             double l2 = 1-(1/a);
                                     
             %>
@@ -36,7 +36,7 @@
                 <label for="capi"><b>Capital</b></label><br>
                 <input type="text" name="capi" id="cap">
                 <br>
-                <label for="mes"><b>Meses</b></label><br>
+                <label for="mes"><b>Meses</b></label><br>  
                 <input type="text" name="mes" id="mes">
                 <br>
                 <label for="tax"><b>Juros</b></label><br>
@@ -57,11 +57,11 @@
                     
                 <%for(int i = 1; i <= meses; i++){
                     
-                    double juros = 0;
+                    double juros = 0;                 //
                     
                     if(i == 1){
                         dev = cap;
-                        prest = 0;
+                        prest = 0;                
                         juros = 0;
                         amorti = 0;
                     }
