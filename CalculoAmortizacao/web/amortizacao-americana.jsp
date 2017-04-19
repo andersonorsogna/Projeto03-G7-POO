@@ -1,3 +1,8 @@
+<%-- 
+    Document   : amortizacao-constante
+    Created on : 19/04/2017, 01:24:13
+    Author     : Aline
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -7,37 +12,35 @@
         <title> ..::POO 03 - Amortização Americana::.. </title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/menu.jspf"%>
+        <%@include file="WEB-INF/menu.jspf"%>
         <h1>Amortização Americana</h1>
          <hr/>
          <%
              int p=10;
-             try{p = Integer.parseInt(request.getParameter("p"));}
-             catch(Exception e){}
              int v=0;
-             try{v = Integer.parseInt(request.getParameter("v"));}
-             catch(Exception e){}
              int j=0;
-             try{j = Integer.parseInt(request.getParameter("j"));}
+             try{
+                 p = Integer.parseInt(request.getParameter("p"));
+                 v = Integer.parseInt(request.getParameter("v"));
+                 j = Integer.parseInt(request.getParameter("j"));}
              catch(Exception e){}
          %>
          <form>
          <table>
              <tr>
-                 <td>Período(meses): </td>
+                 <td>Período (em meses): </td>
                  <td><input type="number" name="p" value="<%=p%>"/></td>
              </tr>
              <tr>
-                 <td>Valor(R$): </td>
+                 <td>Valor (em R$): </td>
                  <td><input type="number" name="v" value="<%=v%>"/></td>
              </tr>
              <tr>
-                 <td>Juros(%a.m.): </td>
+                 <td>Juros (%a.m.): </td>
                  <td><input type="number" name="j" value="<%=j%>"/><td>
              </tr>
              <tr>
-                 <td><input type="submit" value="Gerar"/></td>
-                 <td><input type="reset" value="Limpar"/></td>
+                 <td colspan="2"><input type="submit" value="Calcular"/></td>
              </tr>
          </table>
          </form>
@@ -83,6 +86,6 @@
                  <th>R$ <%=(p*v*j*0.01)+v%></th>
          </table>
          </div>
-    <%@include file="WEB-INF/jspf/footer.jspf"%>
+    <%@include file="WEB-INF/footer.jspf"%>
     </body>
 </html>
