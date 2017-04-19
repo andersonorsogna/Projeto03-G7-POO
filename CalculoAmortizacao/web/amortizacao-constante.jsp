@@ -8,8 +8,8 @@
     </head>
     <body>
     <%@include file="WEB-INF/menu.jspf"%>
-        <h1>Hello World!</h1>
-            <h2>Sistema de Amortizacao Constante</h2>
+        <h1>Sistema de Amortizacao Constante</h1>
+            
         <hr/>
         <%
             double valor = 0.0;

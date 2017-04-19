@@ -63,7 +63,7 @@ devedor. Assim teremos condições de analisar todos os passos mensais de um emp
             
             </tr>
             <tr>
-                <td>Anderson Orsogna</td><td>João Augusto</td><td>Thiago Felipe</td>
+                <th>Anderson Orsogna</th><th>João Augusto</th><th>Thiago Felipe</th>
             </tr>
         </table>
     </center>

@@ -2,7 +2,8 @@
 <%@ page pageEncoding="UTF-8" %>
 <link rel="stylesheet" type="text/css" href="CSS/main.css">
 
-<button class="btn btn-green">Salvar</button>
-<a href="#" class="btn btn-purple">Acessar</a>
-<input type="submit"  class="btn btn-red" value="OK">
+<a href="home.jsp" class="btn btn-purple">Home</a>
+<a href="amortizacao-americana.jsp" class="btn btn-purple">Amortização Americana</a>
+<a href="amortizacao-constante.jsp" class="btn btn-purple">Amortização Constante</a>
+<a href="tabela-price.jsp" class="btn btn-purple">Tabela Price</a>
 
