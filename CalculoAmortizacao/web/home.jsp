@@ -50,6 +50,23 @@ devedor. Assim teremos condições de analisar todos os passos mensais de um emp
                 </td>
             </tr>
         </table>
-                
+        
+        <br/><br/>
+        
+    <center>
+        <table>
+            <tr>
+                <th colspan="3">Integrantes</th>
+            </tr>
+            <tr>
+                <td><img src="Imagens/and01.jpg" class="img" alt="Anderson Orsogna"/></td><td><img src="Imagens/joao01.jpg" class="img" alt="João Augusto"/></td><td><img src="Imagens/thiago01.jpg" class="img" alt="Thiago Felipe"/></td>
+            
+            </tr>
+            <tr>
+                <td>Anderson Orsogna</td><td>João Augusto</td><td>Thiago Felipe</td>
+            </tr>
+        </table>
+    </center>
+    
     </body>
 </html>
