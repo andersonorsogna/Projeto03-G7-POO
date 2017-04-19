@@ -1,4 +1,4 @@
-
+<%@page import="java.text.DecimalFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -15,6 +15,7 @@
              int t=10;
              int v=0;
              int i=0;
+             DecimalFormat decimal = new DecimalFormat("#0.00");
              try{
                  t = Integer.parseInt(request.getParameter("t"));
                  v = Integer.parseInt(request.getParameter("v"));
@@ -78,8 +79,8 @@
                  <td>Total de juros </td>
                  <td>Valor a pagar </td>
              </tr>
-             <th style="color: #ff0000">R$ <%=t*v*i*0.01%></th>
-             <th style="color: #ff0000">R$ <%=(t*v*i*0.01)+v%></th>
+             <th style="color: #ff0000">R$ <%= decimal.format(t*v*i*0.01) %></th>
+             <th style="color: #ff0000">R$ <%= decimal.format((t*v*i*0.01)+v) %></th>
          </table>
          </div>
     <%@include file="WEB-INF/footer.jspf"%>
