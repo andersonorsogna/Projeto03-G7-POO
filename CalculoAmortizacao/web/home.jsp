@@ -22,7 +22,7 @@
                     empréstimo que favorece aqueles que desejam pagar o valor principal 
                     através de uma única parcela, porém os juros devem ser pagos periodicamente ou, 
 dependendo do contrato firmado entre as partes, os juros são capitalizados e pagos junto ao valor 
-principal.
+principal.<br/><a href="amortizacao-americana.jsp">mais...</a>
                 </td>
             </tr>
             <tr>
@@ -34,7 +34,7 @@ imóveis, constituir um negócio próprio, investir na empresa, entre outras op�
 financeiras oferecem um capital que deverá ser devolvido com juros durante o período pré-determinado. As 
 formas de quitar o empréstimo são inúmeras, vamos abordar o funcionamento do sistema de amortizações 
 constantes, que consiste no pagamento da dívida baseada em parcelas de amortizações iguais com prestações 
-e juros decrescentes.
+e juros decrescentes.<br/><a href="amortizacao-constante.jsp">mais...</a>
                 </td>
             </tr>
             <tr>
@@ -46,7 +46,7 @@ do período de quitação do bem, sem aumento por algum tipo de correção (depe
 financiamento). O método Price consiste em calcular prestações fixas, sendo que o saldo devedor é 
 amortizado aos poucos, até a quitação do débito. Os juros estão embutidos nas prestações, a seguir iremos 
 construir uma tabela especificando o valor dos juros pagos e da amortização sobre o valor do saldo 
-devedor. Assim teremos condições de analisar todos os passos mensais de um empréstimo.
+devedor. Assim teremos condições de analisar todos os passos mensais de um empréstimo.<br/><a href="tabela-price.jsp">mais...</a>
                 </td>
             </tr>
         </table>

@@ -9,7 +9,7 @@
     <body>
         <%@include file="WEB-INF/menu.jspf"%>
         <h1>Amortização Americana</h1>
-         <hr/>
+         <hr>
          <%
              int t=10;
              int v=0;

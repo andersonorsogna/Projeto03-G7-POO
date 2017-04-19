@@ -8,6 +8,8 @@
     </head>
     <body>
     <%@include file="WEB-INF/menu.jspf"%>
+    <h1>Tabela Price</h1>
+         <hr>
         <%
             double cap = 0;
             double taxa = 0;
