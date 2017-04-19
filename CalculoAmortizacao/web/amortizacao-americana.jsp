@@ -11,20 +11,20 @@
         <h1>Amortização Americana</h1>
          <hr/>
          <%
-             int p=10;
+             int t=10;
              int v=0;
-             int j=0;
+             int i=0;
              try{
-                 p = Integer.parseInt(request.getParameter("p"));
+                 t = Integer.parseInt(request.getParameter("t"));
                  v = Integer.parseInt(request.getParameter("v"));
-                 j = Integer.parseInt(request.getParameter("j"));}
+                 i = Integer.parseInt(request.getParameter("i"));}
              catch(Exception e){}
          %>
          <form>
          <table>
              <tr>
                  <td>Período (em meses): </td>
-                 <td><input type="number" name="p" value="<%=p%>"/></td>
+                 <td><input type="number" name="t" value="<%=t%>"/></td>
              </tr>
              <tr>
                  <td>Valor (em R$): </td>
@@ -32,7 +32,7 @@
              </tr>
              <tr>
                  <td>Juros (%a.m.): </td>
-                 <td><input type="number" name="j" value="<%=j%>"/><td>
+                 <td><input type="number" name="i" value="<%=i%>"/><td>
              </tr>
              <tr>
                  <td colspan="2"><input type="submit" value="Calcular"/></td>
@@ -47,22 +47,22 @@
                  <td> Juros (R$) </td>
                  <td> Dívida (R$) </td>
              </tr>
-             <%for(int i=0; i<=p; i++){%>
+             <%for(int x=0; x<=t; x++){%>
              <tr>
-                 <td><%=i%></td>
-                 <%if(i==p){
+                 <td><%=x%></td>
+                 <%if(x==t){
                  out.println("<td>"+v+"</td>");
                  }
                  else{
                  out.println("<td>"+0+"</td>");
                  }%>
-                 <%if(i!=0){
-                 out.println("<td>"+v*j*0.01+"</td>");
+                 <%if(x!=0){
+                 out.println("<td>"+v*i*0.01+"</td>");
                  }
                  else{
                  out.println("<td>"+0+"</td>");
                  }%>
-                 <%if(i==p){
+                 <%if(x==t){
                  out.println("<td>"+0+"</td>");
                  }
                  else{
@@ -74,11 +74,11 @@
              <br/>
          <table>
              <tr>
-                 <td>O total de juros é de </td>
-                 <th>R$ <%=p*v*j*0.01%></th>
+                 <td>Total de juros </td>
+                 <td>Valor a pagar </td>
              </tr>
-                 <td>O total a pagar é de</td>
-                 <th>R$ <%=(p*v*j*0.01)+v%></th>
+             <th style="color: #ff0000">R$ <%=t*v*i*0.01%></th>
+             <th style="color: #ff0000">R$ <%=(t*v*i*0.01)+v%></th>
          </table>
          </div>
     <%@include file="WEB-INF/footer.jspf"%>
