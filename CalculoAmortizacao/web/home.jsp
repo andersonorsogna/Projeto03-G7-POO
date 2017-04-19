@@ -10,6 +10,7 @@
         <title> | | | Bem - Vindo ao Sistema de Cálculos Grupo 07 | | |</title>
     </head>
     <body>
+    <%@include file="WEB-INF/menu.jspf"%>
         
         <h1>Conhecendo um Pouco...</h1>
         
@@ -68,5 +69,6 @@ devedor. Assim teremos condições de analisar todos os passos mensais de um emp
         </table>
     </center>
     
+    <%@include file="WEB-INF/footer.jspf"%>
     </body>
 </html>
