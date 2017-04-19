@@ -33,13 +33,13 @@
         
         <form class="form-horizontal">
             <label for="periodo">Periodo</label>
-            <input type="nmber" name="periodo" />
+            <input type="number" name="periodo" />
             
             <label for="valor">Valor</label>
-            <input type="text" name="valor" />
+            <input type="number" name="valor" />
             
             <label for="taxa">Taxa</label>
-            <input type="nmber" name="taxa" />
+            <input type="number" name="taxa" />
             
             <button type="submit" name="calcular">Calcular</button>
         </form>
