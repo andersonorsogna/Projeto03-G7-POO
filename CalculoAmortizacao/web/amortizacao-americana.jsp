@@ -1,8 +1,3 @@
-<%-- 
-    Document   : amortizacao-constante
-    Created on : 19/04/2017, 01:24:13
-    Author     : Aline
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
