@@ -54,7 +54,7 @@
                     <th>Saldo Devedor</th>
                     <th>Valor da Prestação</th>
                     <th>Valor dos Juros</th>
-                    <th>Amorzação</th>
+                    <th>Amortização</th>
                     
                 <%for(int i = 1; i <= meses; i++){
                     
