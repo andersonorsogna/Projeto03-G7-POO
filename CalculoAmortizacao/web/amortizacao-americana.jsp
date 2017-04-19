@@ -12,7 +12,7 @@
         <h1>Amortização Americana</h1>
          <hr>
          <%
-             int t=0;
+             int t=10;
              int v=0;
              int i=0;
              DecimalFormat decimal = new DecimalFormat("#0.00");
