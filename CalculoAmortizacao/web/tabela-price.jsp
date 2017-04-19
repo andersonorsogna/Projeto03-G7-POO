@@ -1,4 +1,4 @@
-
+<%@page import="java.text.DecimalFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,6 +18,7 @@
             double amorti = 0;
             double prest = 0;
             int meses = 0;
+            DecimalFormat decimal = new DecimalFormat("#0.00");
             
             try{cap = Double.parseDouble(request.getParameter("capi"));}    //try para pegar valores dos inputs
             catch(Exception e){}
@@ -74,10 +75,10 @@
                 %>                
                 <tr>
                     <td><%=i%></td>
-                    <td><%=dev%></td>
-                    <td><%=prest%></td>
-                    <td><%=juros%></td>
-                    <td><%=amorti%></td>
+                    <td><%= decimal.format(dev) %></td>
+                    <td><%= decimal.format(prest)%></td>
+                    <td><%= decimal.format(juros)%></td>
+                    <td><%= decimal.format(amorti)%></td>
                 </tr>
                 <%}%>
             </table><%}%>
