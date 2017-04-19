@@ -10,6 +10,7 @@
         <title> | | | Bem - Vindo ao Sistema de Cálculos Grupo 07 | | |</title>
     </head>
     <body>
+    <%@include file="WEB-INF/header.jspf"%>
     <%@include file="WEB-INF/menu.jspf"%>
         
         <h1>Conhecendo um Pouco...</h1>

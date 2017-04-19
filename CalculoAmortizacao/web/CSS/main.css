@@ -13,34 +13,18 @@
   display:inline-block;
   text-decoration: none;
 }
-.btn-green{
-  background:green;
-  color:#fff;
-  box-shadow:0 5px 0 #006000;
-}
-.btn-green:hover{
-  background:#006000;
-  box-shadow:0 5px 0 #003f00;
-}
+
 .btn-purple{
-  background:purple;
+  background:#0099ff;
   color:#fff;
-  box-shadow:0 5px 0 #670167;
+  box-shadow:0 5px 0 #00aaff;
 }
 .btn-purple:hover{
-  background:#670167;
-  box-shadow:0 5px 0 #470047;
+  background:#66ccff;
+  box-shadow:0 5px 0 #000000;
 }
-.btn-red{
-  background:red;
-  color:#fff;
-  box-shadow:0 5px 0 #d20000;
-}
-.btn-red:hover{
-  background:#d20000;
-  box-shadow:0 5px 0 #b00000;
-}
-.btn-green:active, .btn-purple:active, .btn-red:active{
+
+.btn-purple:active {
   position:relative;
   top:5px;
   box-shadow:none;
@@ -92,4 +76,15 @@
 .img{
     width: 130px;/* Faz a largura ficar igual a da largura da imagem de exemplo */
     height: 130px;/* Faz a altura ficar igual a da altura da imagem de exemplo */
+}
+
+.hh{
+    height: 70px;
+    background:#0099ff;
+    color:#fff;
+}
+
+.hh:hover{
+  background:#66ccff;
+  box-shadow:0 5px 0 #000000;
 }

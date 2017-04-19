@@ -7,7 +7,8 @@
         <title> ..::POO 03 - Amortização Americana::.. </title>
     </head>
     <body>
-        <%@include file="WEB-INF/menu.jspf"%>
+        <%@include file="WEB-INF/header.jspf"%>
+    <%@include file="WEB-INF/menu.jspf"%>
         <h1>Amortização Americana</h1>
          <hr>
          <%

@@ -7,6 +7,7 @@
         <title> ..::Tabela - Price::.. </title>
     </head>
     <body>
+    <%@include file="WEB-INF/header.jspf"%>
     <%@include file="WEB-INF/menu.jspf"%>
     <h1>Tabela Price</h1>
          <hr>

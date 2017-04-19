@@ -7,7 +7,9 @@
         <title> ..::POO 03 - Amortização Constante::.. </title>
     </head>
     <body>
+    <%@include file="WEB-INF/header.jspf"%>
     <%@include file="WEB-INF/menu.jspf"%>
+    
         <h1>Sistema de Amortizacao Constante</h1>
             
         <hr/>
